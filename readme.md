@@ -27,7 +27,7 @@
 
 ```
 
-## Function Definitions
+### Function Definitions
 ```bash
 function show_help() {
     # ...
@@ -44,7 +44,7 @@ function get_cpu_info() {
 # ... (similar definitions for other functions)
 ```
 
-## Main Script Logic
+### Main Script Logic
 
 ```bash
 # Main script logic
@@ -62,14 +62,14 @@ case "$1" in
 esac
 ```
 
-## Command Implementations
+### Command Implementations
 ```bash
 function get_cpu_info() {
     lscpu
 }
 ```
 
-## Execution
+### Execution
 ```bash
 # Main script logic
 case "$1" in
@@ -77,6 +77,31 @@ case "$1" in
     * ) show_help ;;
 esac
 ```
+
+### Help Information
+
+```bash
+function show_help() {
+    echo "Usage: internsctl [options] <command>"
+    # ...
+}
+```
+
+### Version Information
+```bash
+function show_version() {
+    echo "internsctl v0.1.0"
+}
+```
+
+### Footer
+```bash
+# ...
+The script ends with a final line, completing the Bash script.
+```
+
+### Conclusion
+The script is organized into functions, making it modular and easy to maintain. The main script logic interprets user input to execute the corresponding command function or display help/version information. Each command function encapsulates the specific logic for its operation.
 
 
 
